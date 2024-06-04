@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Lista</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/e8a19f0fe4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="todo-list-container">
+      <header>
+        <h1>TODO LIST</h1>
+        <label for="task">
+          <input
+            type="text"
+            class="task-input"
+            placeholder="Wpisz treść zadania..."
+          />
+          <button class="add-task-btn">ADD</button>
+        </label>
+        <p class="error hidden">Wpisz treść zadania!</p>
+      </header>
+      <ul class="ul-list">
+        <p class="empty-ul-list">Lista zadań jest pusta</p>
+      </ul>
+    </div>
+
+    <div class="edit-container hidden">
+      <h2>Edytuj zadanie:</h2>
+      <input type="text" class="edit-input" />
+      <div class="edit-btns">
+        <button class="save-edit-btn">ZATWIERDŹ</button>
+        <button class="cancel-edit-btn">ANULUJ</button>
+      </div>
+      <p class="edit-panel-error hidden">Musisz podać jakąś treść</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
